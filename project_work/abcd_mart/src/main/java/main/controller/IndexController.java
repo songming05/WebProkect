@@ -8,6 +8,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class IndexController {
 	@RequestMapping(value="/main/index.do", method=RequestMethod.GET)
+	public ModelAndView indexDo() {
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("/main/index");
+		return  modelAndView;
+	}
+	@RequestMapping(value="/main/index", method=RequestMethod.GET)
 	public ModelAndView index() {
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("/main/index");

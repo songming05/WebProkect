@@ -17,7 +17,7 @@ public class SignUpController {
 	
 	@RequestMapping(value = "/loginStep_02", method = RequestMethod.POST)
 	public String loginStep_02(@RequestParam Map<String,String> map) {
-		System.out.println("map:  "+map);
+		//System.out.println("map:  "+map);
 		return "/user/loginStep_02";
 	}
 }

@@ -21,7 +21,6 @@
 <link rel="stylesheet" href="../css/bestaward.css"/>
 <link rel="stylesheet" href="../css/slick.css"/>
 <link rel="stylesheet" href="../css/slick-theme.css" />
-<link rel="stylesheet" href="../css/newarrivals.css" />
 
 </head>
 <body>
@@ -56,7 +55,7 @@
 <!-- advertisement -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>  <!-- 중간광고용 추가 -->
- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   <!-- 중간광고용 추가 -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   <!-- 중간광고용 추가 -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> <!-- 칸6개짜리 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> <!-- 칸6개짜리 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script> <!-- 사진형태 중간광고 추가소스 -->

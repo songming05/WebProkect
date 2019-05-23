@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<div class="new-main-new-arrivals">
+<div class="new-main-contents-area " style="padding-top: 50px;">
+	<div class="new-main-new-arrivals">
 
 	<section class="arrivals-section-time-box specialPriceProduct" >
 		<h2 class="tt">온라인<strong class="bold">특가</strong></h2>
-	
+
 		<div class="pd-con">
 	       <div class="pd-con-rela">
 	       	<div class="sum-con">
@@ -25,7 +26,7 @@
 	       	<div class="product-con">
 		       	<a href="/abc/product/detail?prdtCode=0064160" class="prod-link">
 			       		<img src="../image/newarrivals/1.jpg" width="150" style="width: 150px;" onerror="imageError(this)">
-			     	
+
 			     	<strong class="prod-maker">아디다스</strong>
 			     	<strong class="prod-name" style="max-width:178px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">COURT70S</strong>
 		       	</a>
@@ -35,21 +36,21 @@
 		   	  </p>
 	    	</div>
 	    </div>
-	    
+
 	    <div class="time-sale-box">
 			<i class="clock-ico"></i>
 			<input type="hidden" id="timeDiff" value="32457">
 			<span class="time-num time">09:00:28</span>
 		</div>
 	</section>
-	
-	
+
+
 	<section class="arrivals-section-arrivals-box">
 		<h2 class="tt">
-			<strong class="bold">NEW</strong> 
+			<strong class="bold">NEW</strong>
 			ARRIVALS
 		</h2>
-	
+
 		<div class="new-arrivals-slide-box">
 			<div class="swiper-container js-arrivals-sw swiper-container-horizontal">
 				<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);transition-duration: 0ms;">
@@ -77,15 +78,15 @@
 				                 <span class="prod-name">PAD SANDAL</span>
 				                 <div class="prod-sum">
 				                     <span class="after-sum">59,000</span>
-				                     
+
 				                 </div>
 				             </div>
 				         </li>
-				         
+
 				         <li class="na-list-li">
                               <div class="product-simple-box">
                                   <a href="/abc/product/detail?prdtCode=0071001" class="prod-img">
-                                  <img src="../image/newarrivals/1.jpg" onerror="imageError(this)"/>
+                                  <img src="../image/newarrivals/4.jpg" onerror="imageError(this)"/>
                                   </a>
                                   <strong class="prod-maker">아식스</strong>
                                   <span class="prod-name">GEL-BND SL</span>
@@ -94,7 +95,7 @@
                                   </div>
                               </div>
                           </li>
-				         
+
 				       </ul>
     				</div>
 				</div>
@@ -110,4 +111,4 @@
 		</div>
 	</section>
 </div>
-	
+</div>

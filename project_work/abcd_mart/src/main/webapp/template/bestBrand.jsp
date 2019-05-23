@@ -1,15 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<div class="container_area">
-   
     <!-- 20180206_new -->
+    <!--.new-main-contents-area  -->
     <div class="new-main-contents-area">
         <!-- new-arrivals -->
         <div class="new-main-new-arrivals">
 
         <!-- best-brand-shop -->
         <div class="new-main-best-brand-shop">
+        
             <section class="best-brand-section-box">
                 <h2 class="tt"><span class="tt-bg"><strong class="bold">BEST</strong> BRAND</span></h2>
                 <div class="best-brand-slide-hidden-box js-bestbrand-slick">
@@ -57,7 +57,7 @@
                     <!-- //슬라이드 탭 -->
                     
                     <!-- 슬라이드 컨텐츠 -->
-                    <div class="best-brand-slide-con-wrap">
+                    <div class="best-brand-slide-con-wrap" style="padding-top: 30px;">
                         <div class="slide-box">
                             
                                 <div class="slide-li ">
@@ -428,5 +428,5 @@
     
        
  </div>
- </div>
- </div>
+</div>
+

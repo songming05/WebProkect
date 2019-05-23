@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<div class="container_area">  
+
 <!-- 20180206_new -->
 <div class="new-main-contents-area">
     <!-- new-arrivals -->

@@ -133,7 +133,8 @@ color:#7b7b7b; }
 .fc_type_66 { color: #666666; }/* 진한글씨 */
 .fc_type_7b { color: #7b7b7b; }/* 약간연한글씨 */
 .fc_type_a4 { color: #A4A4A4; }/* 연한글씨 */
-.fc_type_f3 { color: #f3646a;}
+.fc_type_f3 { color: #f3646a;}/*핑크*/
+.fc_type_54 { color: #5458f8;}/*연파*/
 .fc_red { color : #e50015; }
 .fl-l { float: left; }
 .fl-r { float: right; }
