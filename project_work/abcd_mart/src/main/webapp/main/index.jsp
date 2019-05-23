@@ -11,7 +11,8 @@
 <meta name="naver-site-verification" content="f245ffaf55cafcfe6bcfb852616e7dd91bb4003c"/>
 <title>인덱스입니다</title>
 
-<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../css/main.css"/>
+<link rel="stylesheet" href="../css/header.css"/>
 <!-- advertisement -->
 <link rel="stylesheet" href="../css/advertise.css">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +25,10 @@
 
 </head>
 <body>
+<header>
+<jsp:include page="../template/header.jsp"/>
+
+</header>
 
 
 <div id="signUpButton" style="border: 2px solid pink; height: 50px; cursor: pointer;">(임시)회원가입 버튼입니다</div>

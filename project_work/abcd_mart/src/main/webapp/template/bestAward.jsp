@@ -24,7 +24,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">1</i>
-                                       <a href="/abc/product/detail?prdtCode=0069335" class="prod-img"><img src="../image/bestaward/1.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0069335" class="prod-img"><img src="../image/bestaward/1.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">휠라</strong>
                                        <span class="prod-name">DISRUPTOR 2</span>
                                        <div class="prod-sum">
@@ -37,7 +37,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">2</i>
-                                       <a href="/abc/product/detail?prdtCode=0065464" class="prod-img"><img src="../image/bestaward/2.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0065464" class="prod-img"><img src="../image/bestaward/2.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">푸마</strong>
                                        <span class="prod-name">Thunder KSMU</span>
                                        <div class="prod-sum">
@@ -50,7 +50,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">3</i>
-                                       <a href="/abc/product/detail?prdtCode=0066119" class="prod-img"><img src="../image/bestaward/3.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0066119" class="prod-img"><img src="../image/bestaward/3.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">아디다스</strong>
                                        <span class="prod-name">FALCON W</span>
                                        <div class="prod-sum">
@@ -63,7 +63,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">4</i>
-                                       <a href="/abc/product/detail?prdtCode=0065896" class="prod-img"><img src="../image/bestaward/4.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0065896" class="prod-img"><img src="../image/bestaward/4.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">반스</strong>
                                        <span class="prod-name">STYLE 36 DECON SF</span>
                                        <div class="prod-sum">
@@ -81,7 +81,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">1</i>
-                                       <a href="/abc/product/detail?prdtCode=0070374" class="prod-img"><img src="../image/bestaward/5.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0070374" class="prod-img"><img src="../image/bestaward/5.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">나이키</strong>
                                        <span class="prod-name">WMNS NIKE AIR MAX OKETO</span>
                                        <div class="prod-sum">
@@ -94,7 +94,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">2</i>
-                                       <a href="/abc/product/detail?prdtCode=0071331" class="prod-img"><img src="../image/bestaward/6.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0071331" class="prod-img"><img src="../image/bestaward/6.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">리복</strong>
                                        <span class="prod-name">DMX SERIES 1000</span>
                                        <div class="prod-sum">
@@ -107,7 +107,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">3</i>
-                                       <a href="/abc/product/detail?prdtCode=0068099" class="prod-img"><img src="../image/bestaward/7.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0068099" class="prod-img"><img src="../image/bestaward/7.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">호킨스</strong>
                                        <span class="prod-name">2 STRAP SANDAL</span>
                                        <div class="prod-sum">
@@ -120,7 +120,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">4</i>
-                                       <a href="/abc/product/detail?prdtCode=0070744" class="prod-img"><img src="../image/bestaward/8.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0070744" class="prod-img"><img src="../image/bestaward/8.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">아디다스</strong>
                                        <span class="prod-name">CRAZYCHAOS</span>
                                        <div class="prod-sum">
@@ -138,7 +138,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">1</i>
-                                       <a href="/abc/product/detail?prdtCode=0063847" class="prod-img"><img src="../image/bestaward/9.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0063847" class="prod-img"><img src="../image/bestaward/9.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">나이키</strong>
                                        <span class="prod-name">NIKE AIR MAX AXIS</span>
                                        <div class="prod-sum">
@@ -151,7 +151,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">2</i>
-                                       <a href="/abc/product/detail?prdtCode=0041579" class="prod-img"><img src="../image/bestaward/10.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0041579" class="prod-img"><img src="../image/bestaward/10.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">수페르가</strong>
                                        <span class="prod-name">2750-COTU CLASSIC</span>
                                        <div class="prod-sum">
@@ -164,7 +164,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">3</i>
-                                       <a href="/abc/product/detail?prdtCode=0008525" class="prod-img"><img src="../image/bestaward/11.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0008525" class="prod-img"><img src="../image/bestaward/11.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">반스</strong>
                                        <span class="prod-name">AUTHENTIC</span>
                                        <div class="prod-sum">
@@ -177,7 +177,7 @@
                                <li class="award-slide-li">
                                    <div class="product-simple-box">
                                        <i class="best-num">4</i>
-                                       <a href="/abc/product/detail?prdtCode=0043164" class="prod-img"><img src="../image/bestaward/12.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
+                                       <a href="/abcd_mart/product/detail?prdtCode=0043164" class="prod-img"><img src="../image/bestaward/12.jpg" width="220" style="width:220px;" onerror="imageError(this)"/></a>
                                        <strong class="prod-maker" style="margin-top: -10px;">컨버스</strong>
                                        <span class="prod-name">CT AS Core</span>
                                        <div class="prod-sum">

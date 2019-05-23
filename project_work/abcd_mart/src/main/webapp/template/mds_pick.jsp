@@ -31,7 +31,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070711" class="prod-img"><img src="../image/mds_pick/SLEEK_TENDER.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070711" class="prod-img"><img src="../image/mds_pick/SLEEK_TENDER.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>휠라</strong><br>
                                             <span class="prod-name">SLEEK TENDER</span><br><br>
                                             <div class="prod-sum">
@@ -43,7 +43,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070209" class="prod-img"><img src="../image/mds_pick/KAWA_SLIDE_BGP.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070209" class="prod-img"><img src="../image/mds_pick/KAWA_SLIDE_BGP.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>나이키</strong><br>
                                             <span class="prod-name">KAWA SLIDE BGP</span><br><br>
                                             <div class="prod-sum">
@@ -55,7 +55,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0069437" class="prod-img"><img src="../image/mds_pick/OVERS.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0069437" class="prod-img"><img src="../image/mds_pick/OVERS.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>반스</strong><br>
                                             <span class="prod-name">OVERS</span><br><br>
                                             <div class="prod-sum">
@@ -67,7 +67,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0071060" class="prod-img"><img src="../image/mds_pick/ADILETTE_SHOWER.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0071060" class="prod-img"><img src="../image/mds_pick/ADILETTE_SHOWER.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>아디다스</strong><br>
                                             <span class="prod-name">ADILETTE SHOWER</span><br><br>
                                             <div class="prod-sum">
@@ -86,7 +86,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070378" class="prod-img"><img src="../image/mds_pick/WMNS_NIKE_TODOS1.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070378" class="prod-img"><img src="../image/mds_pick/WMNS_NIKE_TODOS1.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>나이키</strong><br>
                                             <span class="prod-name">WMNS NIKE TODOS</span><br><br>
                                             <div class="prod-sum">
@@ -98,7 +98,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070377" class="prod-img"><img src="../image/mds_pick/WMNS_NIKE_TODOS2.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070377" class="prod-img"><img src="../image/mds_pick/WMNS_NIKE_TODOS2.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>나이키</strong><br>
                                             <span class="prod-name">WMNS NIKE TODOS</span><br><br>
                                             <div class="prod-sum">
@@ -110,7 +110,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070376" class="prod-img"><img src="../image/mds_pick/WMNS_NIKE_TODOS3.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070376" class="prod-img"><img src="../image/mds_pick/WMNS_NIKE_TODOS3.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>나이키</strong><br>
                                             <span class="prod-name">WMNS NIKE TODOS</span><br><br>
                                             <div class="prod-sum">
@@ -122,7 +122,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070313" class="prod-img"><img src="../image/mds_pick/WMNS_NIKE_TODOS4.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070313" class="prod-img"><img src="../image/mds_pick/WMNS_NIKE_TODOS4.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>나이키</strong><br>
                                             <span class="prod-name">NIKE TODOS</span><br><br>
                                             <div class="prod-sum">
@@ -141,7 +141,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070301" class="prod-img"><img src="../image/mds_pick/NIKE_AIR_MAX_OKETO.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070301" class="prod-img"><img src="../image/mds_pick/NIKE_AIR_MAX_OKETO.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>나이키</strong><br>
                                             <span class="prod-name">NIKE AIR MAX OKETO</span><br><br>
                                             <div class="prod-sum">
@@ -153,7 +153,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0068649" class="prod-img"><img src="../image/mds_pick/COURT_DELUXE_VC.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0068649" class="prod-img"><img src="../image/mds_pick/COURT_DELUXE_VC.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>휠라</strong><br>
                                             <span class="prod-name">COURT DELUXE VC</span><br><br>
                                             <div class="prod-sum">
@@ -165,7 +165,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070012" class="prod-img"><img src="../image/mds_pick/NIZZA_TREFOIL_W.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070012" class="prod-img"><img src="../image/mds_pick/NIZZA_TREFOIL_W.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>아디다스</strong><br>
                                             <span class="prod-name">NIZZA TREFOIL W</span><br><br>
                                             <div class="prod-sum">
@@ -177,7 +177,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070083" class="prod-img"><img src="../image/mds_pick/2750-COTUWEBBING.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070083" class="prod-img"><img src="../image/mds_pick/2750-COTUWEBBING.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>수페르가</strong><br>
                                             <span class="prod-name">2750-COTUWEBBING</span><br><br>
                                             <div class="prod-sum">
@@ -196,7 +196,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0068093" class="prod-img"><img src="../image/mds_pick/SUMMER_PAD_SANDAL.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0068093" class="prod-img"><img src="../image/mds_pick/SUMMER_PAD_SANDAL.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>호킨스</strong><br>
                                             <span class="prod-name">PAD SANDAL</span><br><br>
                                             <div class="prod-sum">
@@ -208,7 +208,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070107" class="prod-img"><img src="../image/mds_pick/REEBOK_SANDALSTYL.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070107" class="prod-img"><img src="../image/mds_pick/REEBOK_SANDALSTYL.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>리복</strong><br>
                                             <span class="prod-name">REEBOK SANDALSTYL</span><br><br>
                                             <div class="prod-sum">
@@ -220,7 +220,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0071137" class="prod-img"><img src="../image/mds_pick/SUMMER_Leadcat_YLM_Lite.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0071137" class="prod-img"><img src="../image/mds_pick/SUMMER_Leadcat_YLM_Lite.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>푸마</strong><br>
                                             <span class="prod-name">Leadcat YLM Lite</span><br><br>
                                             <div class="prod-sum">
@@ -232,7 +232,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0071113" class="prod-img"><img src="../image/mds_pick/FILA_TRACER_BAND.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0071113" class="prod-img"><img src="../image/mds_pick/FILA_TRACER_BAND.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>휠라</strong><br>
                                             <span class="prod-name">FILA TRACER BAND</span><br><br>
                                             <div class="prod-sum">
@@ -251,7 +251,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070526" class="prod-img"><img src="../image/mds_pick/One_Star_Mule1.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070526" class="prod-img"><img src="../image/mds_pick/One_Star_Mule1.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>컨버스</strong><br>
                                             <span class="prod-name">One Star Mule</span><br><br>
                                             <div class="prod-sum">
@@ -263,7 +263,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0069825" class="prod-img"><img src="../image/mds_pick/CENTER_COURT_G_MULE.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0069825" class="prod-img"><img src="../image/mds_pick/CENTER_COURT_G_MULE.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>휠라</strong><br>
                                             <span class="prod-name">CENTER COURT G MULE</span><br><br>
                                             <div class="prod-sum">
@@ -275,7 +275,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0071197" class="prod-img"><img src="../image/mds_pick/2402_COTU.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0071197" class="prod-img"><img src="../image/mds_pick/2402_COTU.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>수페르가</strong><br>
                                             <span class="prod-name">2402-COTU</span><br><br>
                                             <div class="prod-sum">
@@ -287,7 +287,7 @@
                                 
                                     <li class="mds-pick-round-li">
                                         <div class="product-simple-box">
-                                            <a href="/abc/product/detail?prdtCode=0070528" class="prod-img"><img src="../image/mds_pick/One_Star_Mule2.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
+                                            <a href="/abcd_mart/product/detail?prdtCode=0070528" class="prod-img"><img src="../image/mds_pick/One_Star_Mule2.jpg" width="150px" style="width:150px;" onerror="imageError(this)"/></a>
                                             <strong class="prod-maker"><br>컨버스</strong><br>
                                             <span class="prod-name">One Star Mule</span><br><br>
                                             <div class="prod-sum">

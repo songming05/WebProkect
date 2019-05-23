@@ -24,10 +24,9 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.web.abcd_mart" />
-	<context:component-scan base-package="com.exam.springtest" />
 	<context:component-scan base-package="main.controller"/>
-	<context:component-scan base-package="member.controller"/>
 	<context:component-scan base-package="user.signUp.controller"/>
+	<context:component-scan base-package="page.controller"/>
 	
 	
 </beans:beans>

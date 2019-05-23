@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<!--Áß°£±¤°í ¼Ò½º -->
+    pageEncoding="UTF-8"%>
+<!--ì¤‘ê°„ê´‘ê³  ì†ŒìŠ¤ -->
 <aside>
 <div class="container" >
   <div class="row" >

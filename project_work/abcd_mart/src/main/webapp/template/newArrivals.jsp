@@ -24,7 +24,7 @@
 	       		</div>
 	       	</div>
 	       	<div class="product-con">
-		       	<a href="/abc/product/detail?prdtCode=0064160" class="prod-link">
+		       	<a href="/abcd_mart/product/detail?prdtCode=0064160" class="prod-link">
 			       		<img src="../image/newarrivals/1.jpg" width="150" style="width: 150px;" onerror="imageError(this)">
 
 			     	<strong class="prod-maker">아디다스</strong>
@@ -58,7 +58,7 @@
 				       <ul class="slide-product-list-na">
 				         <li class="na-list-li">
 				             <div class="product-simple-box">
-				                 <a href="/abc/product/detail?prdtCode=0070377" class="prod-img">
+				                 <a href="/abcd_mart/product/detail?prdtCode=0070377" class="prod-img">
 				                 <img src="../image/newarrivals/2.jpg" onerror="imageError(this)"/>
 				                 </a>
 				                 <strong class="prod-maker">나이키</strong>
@@ -71,7 +71,7 @@
 
 				         <li class="na-list-li">
 				             <div class="product-simple-box">
-				                 <a href="/abc/product/detail?prdtCode=0068090" class="prod-img">
+				                 <a href="/abcd_mart/product/detail?prdtCode=0068090" class="prod-img">
 				                 <img src="../image/newarrivals/3.jpg" onerror="imageError(this)"/>
 				                 </a>
 				                 <strong class="prod-maker">호킨스</strong>
@@ -85,7 +85,7 @@
 
 				         <li class="na-list-li">
                               <div class="product-simple-box">
-                                  <a href="/abc/product/detail?prdtCode=0071001" class="prod-img">
+                                  <a href="/abcd_mart/product/detail?prdtCode=0071001" class="prod-img">
                                   <img src="../image/newarrivals/4.jpg" onerror="imageError(this)"/>
                                   </a>
                                   <strong class="prod-maker">아식스</strong>

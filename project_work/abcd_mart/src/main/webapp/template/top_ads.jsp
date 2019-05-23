@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 
 
-<!-- ¸ÞÀÎ±¤°í -->
+<!-- ë©”ì¸ê´‘ê³  -->
 <aside>
 	<div id=carousel-a class="carousel slide carousel-sync" data-ride="carousel"  data-interval="2950">
 		<ol class="carousel-indicators">
