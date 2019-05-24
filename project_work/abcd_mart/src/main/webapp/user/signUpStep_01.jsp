@@ -9,6 +9,9 @@
 
 
 <link rel="stylesheet" href="../css/user/userLoginCss.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" />
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js' /></script>
+
 </head>
 <body>
 	<section class="sub_type1 page_location">
@@ -36,7 +39,7 @@
         </ul>
     </section>
     
-   <form action="/abcd_mart/user/loginStep_02" method="post" id="form-agreement">
+   <form action="/abcd_mart/user/signUpStep_02" method="post" id="form-agreement">
 	
 	    <section class="mt60">
 	        <ul class="agree_terms mt10">
@@ -139,7 +142,7 @@
           <div class="mt40 align-center btnAgree">
             <a href="javascript:submit();" class="btn_lType0"  style="width: 300px;">만 14세 이상 회원가입</a>
             &nbsp;<a href="javascript:underAgeCheck();" class="btn_lType5" style="width: 300px;">만 14세 미만 회원가입</a>
-            &nbsp;<a href="http://www.abcmart.co.kr/abc/main" class="btn_lType5" style="width: 300px;">취소</a>
+            &nbsp;<a href="/abcd_mart/main/index" class="btn_lType5" style="width: 300px;">취소</a>
          </div>
          
          <div class="mt40"></div>
@@ -151,6 +154,5 @@
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script type="text/javascript" src="../js/user/userLoginJs.js"></script>
-
 
 </html>

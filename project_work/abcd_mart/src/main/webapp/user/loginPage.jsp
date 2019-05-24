@@ -6,9 +6,8 @@
 <meta charset="UTF-8">
 
 
-<title>loginBox</title>
+<title>로그인 페이지</title>
 <link rel="stylesheet" href="../css/user/userLoginCss.css">
-
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" />
 <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js' /></script>
 

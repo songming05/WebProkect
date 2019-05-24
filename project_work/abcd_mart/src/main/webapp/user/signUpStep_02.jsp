@@ -6,8 +6,6 @@
 <meta charset="UTF-8">
 <title>Step02</title>
 <link rel="stylesheet" href="../css/user/userLoginCss.css">
-
-
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" />
 <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js' /></script>
 
@@ -35,7 +33,7 @@
     </section>
     
  	<!--  form 시작점  -->
-  <form action="/abc/user/joinUser" method="post" id="form-join-user">
+  <form action="" method="post" id="form-join-user">
     <header class="clearfix">
              <h3 class="fl-l tit_type1 fs16 pl10">회원기본정보</h3>
              <p class="fl-r mt10 pr10 fontfamily fs11"><em class="fc_red">＊</em> 필수 입력정보</p>
@@ -197,7 +195,7 @@
  
  <div class="mt40 mb40 align-center btn_aline">
             <a href="javascript:joinUser();" class="btn_lType2" style="width: 300px;">회원가입</a>&nbsp;
-            <a href="https://www.abcmart.co.kr/abc/main" class="btn_lType5" style="width: 300px;">취소</a>
+            <a href="/abcd_mart/main/index" class="btn_lType5" style="width: 300px;">취소</a>
  </div>
  <div class="mb40 mt40 align-center"></div>
  

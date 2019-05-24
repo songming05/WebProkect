@@ -222,7 +222,7 @@
 		</table>
 		
 		<div id="brand_div">
-			<section>
+			<section id="brand_section1">
 				<table id="brandTable1">
 					<tr>
 						<td rowspan="2" valign="top">
@@ -263,7 +263,7 @@
 			
 			<hr id="brandTable_line">
 			
-			<section>  
+			<section id="brand_section2">  
 				<table id="brandTable2">
 					<tr>
 						<td colspan="2">
@@ -369,7 +369,7 @@
 				</table>
 			</section>
 			
-			<section>
+			<section id="brand_section3">
 				<table id="brandTable5">
 					<tr>
 						<td>
