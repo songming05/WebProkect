@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import user.bean.UserDTO;
 import user.dao.UserDAO;
 
 @Controller
@@ -21,14 +22,6 @@ public class UserController {
 	BCryptPasswordEncoder passwordEncoder;
 
 	
-	@RequestMapping(value = "/signUp", method = RequestMethod.POST)
-	@ResponseBody
-	public String signUp(@RequestParam Map<String,String> map) {
-		//암호화 진행하면 된다
-		
-		return "";
-	}
-	
 	@RequestMapping(value = "/signUpStep_01", method = RequestMethod.GET)
 	public String signUpStep_01() {
 		return "/user/signUpStep_01";
@@ -38,6 +31,36 @@ public class UserController {
 	public String signUpStep_02(@RequestParam Map<String,String> map) {
 		//System.out.println("map:  "+map);
 		return "/user/signUpStep_02";
+	}
+	
+	@RequestMapping(value = "/checkUserId", method = RequestMethod.POST)
+	@ResponseBody
+	public String checkUserId(@RequestParam String id) {
+		UserDTO userDTO = userDAO.checkUserId(id);
+		String result="";
+		if(userDTO==null) {
+			result="not_exist";
+		} else {
+			result="exist";
+		}
+		
+		return result;
+	}
+	
+	@RequestMapping(value = "/signUp", method = RequestMethod.POST)
+	@ResponseBody
+	public String signUp(@RequestParam Map<String,String> map) {
+		//암호화 진행하면 된다
+		String EncodedPassword = passwordEncoder.encode(map.get("password"));
+		map.remove("password");
+		map.put("password", EncodedPassword);
+		String result  = userDAO.signUp(map);
+		return result;
+	}
+	
+	@RequestMapping(value = "/loginPage", method = RequestMethod.GET)
+	public String loginPage() {
+		return "/user/loginPage";
 	}
 
 }

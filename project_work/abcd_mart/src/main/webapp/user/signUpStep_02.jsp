@@ -64,14 +64,15 @@
    			
    			 <tr>
              	<td class="sub_type2"><label for="userId"><em class="fc_red">*</em> 아이디</label></td>
-             	<td class="sub_type2"><input type="text" class="table_text" name="userId" id="userId" value="" style="width:300px;" maxlength="20" placeholder="영문, 숫자사용 3~20자">
+             	<td class="sub_type2"><input type="text" class="table_text" name="userId" id="userId" value="" style="width:300px;" maxlength="20" placeholder="영문, 숫자사용 4~20자">
              	&nbsp;&nbsp;
              	<a class="btn_sType1" id="btnCheckUserId" style="cursor: pointer;">중복확인</a>&nbsp;&nbsp;
              	<span class="fc_type_f3 user_id_noti insert" style="display: inline;"></span>
              	<span class="fc_type_f3 user_id_noti enter" style="display:none;">아이디를 입력해주세요</span> 
-                <span class="fc_type_f3 user_id_noti ok" style="display: none;">사용 가능한 아이디 입니다.</span>
+                <span class="fc_type_f3 user_id_noti ok" style="display: none; color: blue;">사용 가능한 아이디 입니다.</span>
                 <span class="fc_type_f3 user_id_noti duplicated" style="display: none;">이미 가입된 아이디 입니다.</span>
                 <span class="fc_type_f3 user_id_noti unavailable" style="display: none;">사용할 수 없는 아이디 입니다.</span>
+                <input type="hidden" id="checkUserIdResult">
 
     
              	</td>
@@ -84,13 +85,17 @@
              	<span class="sub_type2 fc_type_f3 check_password_blank"></span>
              	<span class="sub_type2 fc_type_f3 check_password_noti incorrect" style="display: none;">비밀번호가 일치하지 않습니다.</span>
              	<span class="sub_type2 fc_type_f3 check_password_noti enter" style="display: none;">비밀번호를 입력해주세요.</span>
-
+             	
              	</td>
              </tr>
              
              <tr>
              	<td class="sub_type2"><label for="userPwd2"><em class="fc_red">*</em> 비밀번호 확인</label></td>
-             	<td class="sub_type2"><input type="password" class="table_text" name="userPwd2" id="userPwd2" value="" style="width:300px;" maxlength="20"></td>
+             	<td class="sub_type2">
+             		<input type="password" class="table_text" name="userPwd2" id="userPwd2" value="" style="width:300px;" maxlength="20">
+             		<span class="sub_type2 fc_type_f3 check_password_noti ok" style="display: none; color: blue;">비밀번호가 일치합니다.</span>             	
+             	</td>
+             	
              </tr>
              
              <tr>

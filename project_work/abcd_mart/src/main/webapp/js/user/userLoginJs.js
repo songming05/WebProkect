@@ -18,23 +18,55 @@ $('#userLoginTab').click(function(){
 
 //회원가입버튼
 $('#loginBox_writeBtn').click(function(){
-	location.href='/abcd_mart/user/signUpStep_01.jsp';
+	location.href='/abcd_mart/user/signUpStep_01';
 });
 //로그인버튼
-$('#loginBox_loginBtn').click(function(){
+function loginUser(){
 	if($('#userId').val()==''){
 		swal("아이디를 입력해주세요");
 	}else if($('#userPwd').val()=='') {
 		swal("비밀번호를 입력해주세요");
 	}else {
 		//이동
+		$.ajax({
+			type: 'POST',
+			url: '/abcd_mart/user/checkUserId',
+			data: {'id':$('#userId').val()},
+			dataType: 'text',
+			success: function(data) {
+				if(data=='not_exist'){
+					swal('존재하지 않는 아이디 입니다.');
+				} else {
+					$.ajax({
+						type: 'POST',
+						url: '/abcd_mart/user/login',
+						data: {'id':$('#userId').val(),
+								'password':$('#userPwd').val()},
+						dataType: 'text',
+						success: function(data) {
+							if(data=='loginOk'){
+								location.href = "/abcd_mart/main/index";
+							} else if(data=='loginFail'){
+								swal('아이디 또는 비밀번호가 틀렸습니다.');
+							}
+						}
+					});
+				}
+			}
+		});		
 	}
-});
+}
 
 
 
 
-///************* signUpStep_01
+
+
+
+
+
+///************* 회원가입 ******************
+//signUpStep_01
 $('input#agree_all').on('click', function() {
     if($(this).is(':checked') == true) {
         $('input#cbPurchaseClause').prop('checked', true);
@@ -97,16 +129,48 @@ $('input[name=userId]').on('change', function() {
   $('span.user_id_noti').css('display', 'none');
 });
  
-//중복버튼 누르면
+
+
+
+//===================== 중복버튼 누르면 =====================
 $('#btnCheckUserId').on('click', function() {
-   var userId = $('input[name=userId]').val();
- //비어있으면 
+   var userId = $('input[name=userId]');   
+   $('span.user_id_noti').css('display', 'none');
+   
+//비어있으면 
    if($('input#userId').val() == '') { 
-       $('span.user_id_noti').css('display', 'none');
        $('span.user_id_noti.enter').css('display', 'inline'); //입력하세요 창뜸
-       $('input[name=userId]').focus();
+       userId.focus();
        return false;
 	}
+   
+   if( (userId.val().length<4) 
+		   || (userId.val().length>20) 
+		   //|| 한글일경우 추가, 특수문자일 경우도 아래같이 하면 되는지 봐주세요
+		   //|| (userId.match(/([!,@,#,$,%,^,&,*,?,_,~,-])/))
+		   )  {
+	   $('span.user_id_noti.unavailable').css('display', 'inline');
+	   userId.focus();
+	   return false;
+   }
+   
+   
+   $.ajax({
+		type: 'POST',
+		url: '/abcd_mart/user/checkUserId',
+		data: {'id':userId.val()},
+		dataType: 'text',
+		success: function(data) {
+			if(data=='exist'){
+				$('span.user_id_noti.duplicated').css('display', 'inline');
+			} else if(data=='not_exist'){
+				$('span.user_id_noti.ok').css('display', 'inline');
+				$('#checkUserIdResult').val(userId.val());
+			}
+		}
+	});
+  
+   
 });
 
 
@@ -114,8 +178,7 @@ $('#btnCheckUserId').on('click', function() {
 $('input[name=userPwd]').on('focusout', function() {
   var userPwd = $(this).val();
   var userPwd2 = $('input[name=userPwd2]').val();
-  $('span.check_password_noti.enter').css('display','none');
-  $('span.check_password_noti.incorrect').css('display', 'none');
+  $('span.check_password_noti').css('display','none');
   
   if(userPwd!='' && userPwd2!=''){
 
@@ -132,8 +195,7 @@ $('input[name=userPwd]').on('focusout', function() {
 	
 	
 $('input[name=userPwd2]').on('focusout', function() {
-	      $('span.check_password_noti.enter').css('display','none');
-	      $('span.check_password_noti.incorrect').css('display', 'none');
+	      $('span.check_password_noti').css('display','none');
 	      
 	      var userPwd2 = $(this).val();
 	      var userPwd = $('input[name=userPwd]').val();
@@ -143,7 +205,7 @@ $('input[name=userPwd2]').on('focusout', function() {
 	      	    $('span.check_password_noti.incorrect').css('display', 'inline');//일치X
 	      	    return;
 	      	 }else if( userPwd == userPwd2){
-	      		$('span.check_password_noti.enter').css('display','inline');//일치
+	      		$('span.check_password_noti.ok').css('display','inline');//일치
 	      		return;
 	      	 }
 	      }
@@ -325,7 +387,11 @@ function joinUser() {
       	    return;
   	    }
 	}
-		
+	
+	if($('#checkUserIdResult').val()!=userId.val()) {
+		swal('아이디를 중복체크 해주세요');
+		return false;
+	}
 	$.ajax({
 		type: 'POST',
 		url: '/abcd_mart/user/signUp',
@@ -354,7 +420,7 @@ function joinUser() {
 function pwd_check(userPwd) {
  
   if( (userPwd.length<8) || (!userPwd.match(/([a-zA-Z0-9].*[!,@,#,$,%,^,&,*,?,_,~,-])|([!,@,#,$,%,^,&,*,?,_,~,-].*[a-zA-Z0-9])/)))  {
-    alert("비밀번호는 영문(대소문자구분),숫자,특수문자(~!@#$%^&*()-_? 만 허용)를 혼용하여 8자 이상을 입력해주세요.");
+    swal("비밀번호는 영문(대소문자구분),숫자,특수문자(~!@#$%^&*()-_? 만 허용)를 혼용하여 8자 이상을 입력해주세요.");
     return false;
   }
   return true;
