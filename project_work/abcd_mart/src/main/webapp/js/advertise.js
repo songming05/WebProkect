@@ -1,5 +1,5 @@
 /*중간광고 소스 */
-$(document).ready(function(){
+/*$(document).ready(function(){*/
 	$(".custom-carousel").swipe({
 
 		  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -11,7 +11,7 @@ $(document).ready(function(){
 		  allowPageScroll:"vertical"
 
 		});
-	    $(window).resize(function() {
+	/*$(window).resize(function() {*/
 					if($(window).width() >= 992) {
 	            $('.custom-carousel .item').each(function(){
 				var itemToClone = $(this);
@@ -62,8 +62,8 @@ $(document).ready(function(){
 				}
 			  });
 	        }
-	    }).resize(); 
-	});
+/*	    }).resize(); 
+	});*/
 
 
 /*맨밑 광고*/

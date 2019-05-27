@@ -1,7 +1,3 @@
-$('#signUpButton').click(function() {
-	location.href='/abcd_mart/user/signUpStep_01';
-});
-
 $(document).ready(function(){
 	$('#mobileTable').hide();
 	$('#categoryTable').hide();

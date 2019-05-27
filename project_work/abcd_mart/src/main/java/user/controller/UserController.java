@@ -74,11 +74,18 @@ public class UserController {
 			loginResult="loginOk";
 			session.setAttribute("memId", userDTO.getId());
 			session.setAttribute("memName", userDTO.getName());
+			System.out.println(userDTO.getName());
 		} else {
 			loginResult="loginFail";
 		}
 		
 		return loginResult;
+	}
+	
+	@RequestMapping(value = "/logout", method = RequestMethod.GET)
+	public String logout(HttpSession session) {
+		session.invalidate();
+		return "/main/index";
 	}
 
 }

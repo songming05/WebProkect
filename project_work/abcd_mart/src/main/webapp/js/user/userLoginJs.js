@@ -144,14 +144,11 @@ $('#btnCheckUserId').on('click', function() {
        return false;
 	}
    
-   if( (userId.val().length<4) 
-		   || (userId.val().length>20) 
-		   //|| 한글일경우 추가, 특수문자일 경우도 아래같이 하면 되는지 봐주세요
-		   //|| (userId.match(/([!,@,#,$,%,^,&,*,?,_,~,-])/))
-		   )  {
-	   $('span.user_id_noti.unavailable').css('display', 'inline');
+   var idReg = /^[a-z0-9]+[a-z0-9]{3,19}$/g;
+   if(!idReg.test(userId.val())) {
+	   $('span.user_id_noti.unavailableCheckId').css('display','inline');
 	   userId.focus();
-	   return false;
+       return false;
    }
    
    

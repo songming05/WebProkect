@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div id="main_all">
@@ -10,10 +10,9 @@
 		</ul>
 		
 		<ul id="main_top_rightUl">
-			<c:if test="${memId ne null }"> <li><a>로그아웃</a></li> </c:if>
+			<c:if test="${memId ne null }"> <li><a href="../user/logout">로그아웃</a></li> </c:if>
 			<c:if test="${memId eq null }"> <li><a href="../user/loginPage">🚪로그인</a></li></c:if>
-			
-			<li>✍회원가입</li>
+			<c:if test="${memId eq null }"> <li><a href="/abcd_mart/user/signUpStep_01">✍회원가입</a></li></c:if>
 			<li>💼장바구니</li>
 			<li>🚚주문배송</li>
 			<li>📄내정보</li>
@@ -31,7 +30,7 @@
 	</div>
 	
 	<div id="main_center">
-		<img id="logo" src="../image/header/ABCD-MART.png"/>
+		<img id="logo" src="../image/header/ABCD-MART.png" onclick="location.href='/abcd_mart/main/index'" style="cursor: pointer;"/>
 		
 		<div id="searchBox">
 			<input type="text" id="searchText"/>
@@ -692,3 +691,4 @@
 		</div>
 	</div>
 </div>
+<br><br>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +9,19 @@
 
 <title>로그인 페이지</title>
 <link rel="stylesheet" href="../css/user/userLoginCss.css">
+<link rel="stylesheet" href="../css/main.css"/>
+<link rel="stylesheet" href="../css/header.css"/>
+
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" />
 <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js' /></script>
 
 </head>
 <body>
+<header>
+<jsp:include page="../template/header.jsp"/>
+
+</header>
+
 
 <div class="container_wrap">
             
@@ -21,10 +30,11 @@
 <div class="container_layout">
 	<!-- page_location -->
 	<section class="page_location">
-            <ul>
-                <li class="sub_type2"><a href="https://www.abcmart.co.kr/abc/main">홈</a></li>
-                <li class="location_box sub_type2"><span> 로그인</span></li>
-            </ul>
+	    <ul>
+	        <li class="sub_type2"><a href="https://www.abcmart.co.kr/abc/main">홈</a></li>
+	        <li class="location_box sub_type2"><span> 로그인</span></li>
+	    </ul>
+        <hr>    
      </section>
 	 
         
@@ -148,5 +158,6 @@
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script type="text/javascript" src='../js/user/userLoginJs.js'/></script>
+<script type="text/javascript" src="../js/main.js"></script>
 
 </html>
