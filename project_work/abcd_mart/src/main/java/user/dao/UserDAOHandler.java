@@ -31,4 +31,9 @@ public class UserDAOHandler implements UserDAO {
 	public UserDTO checkUserId(String id) {		
 		return sqlSession.selectOne("userSQL.checkUserId", id);
 	}
+
+	@Override
+	public UserDTO getUserInfo(Map<String, String> map) {
+		return sqlSession.selectOne("userSQL.getUserInfo", map);
+	}
 }

@@ -2,6 +2,8 @@ package user.controller;
 
 import java.util.Map;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -61,6 +63,22 @@ public class UserController {
 	@RequestMapping(value = "/loginPage", method = RequestMethod.GET)
 	public String loginPage() {
 		return "/user/loginPage";
+	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@ResponseBody
+	public String login(@RequestParam Map<String, String> map, HttpSession session) {
+		String loginResult="";
+		UserDTO userDTO = userDAO.getUserInfo(map);
+		if(passwordEncoder.matches(map.get("password"), userDTO.getPassword())) {
+			loginResult="loginOk";
+			session.setAttribute("memId", userDTO.getId());
+			session.setAttribute("memName", userDTO.getName());
+		} else {
+			loginResult="loginFail";
+		}
+		
+		return loginResult;
 	}
 
 }

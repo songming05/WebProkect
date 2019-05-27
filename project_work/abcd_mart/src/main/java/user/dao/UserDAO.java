@@ -10,4 +10,7 @@ public interface UserDAO {
 
 	UserDTO checkUserId(String id);
 
+
+	UserDTO getUserInfo(Map<String, String> map);
+
 }
