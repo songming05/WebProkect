@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="../css/bestaward.css"/>
 <link rel="stylesheet" href="../css/slick.css"/>
 <link rel="stylesheet" href="../css/slick-theme.css" />
+<link rel="stylesheet" href="../css/mainFooter.css"/>
 
 </head>
 <body>
@@ -47,7 +48,8 @@
 
 
 
-
+<jsp:include page="../template/noticeMovie.jsp"/>
+<jsp:include page="../template/mainFooter.jsp"/>
 
 
 
@@ -72,4 +74,5 @@
 
 <script type="text/javascript" src="../js/theme.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/mainFooter.js"></script>
 </html>
