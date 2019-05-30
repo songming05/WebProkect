@@ -50,12 +50,9 @@ $('#childLi').click(function(){
 
 //MD's PICK
 //슬라이드샌들 클릭
-$('#sandal').click(function(){
+$('#slideSandal').click(function(){
 	$(this).addClass('on');
-	$('#todos').removeClass('on');
-	$('#whiteShoe').removeClass('on');
-	$('#summerSandal').removeClass('on');
-	$('#muleShoe').removeClass('on');
+	$(this).siblings().removeClass('on');
 	
 	$('#slideSandalDiv').show();
 	$('#nikeTodosDiv').hide();
@@ -67,11 +64,9 @@ $('#sandal').click(function(){
 
 //나이키토도스 클릭
 $('#todos').click(function(){
-	$(this).addClass('on');
-	$('#sandal').removeClass('on');
-	$('#whiteShoe').removeClass('on');
-	$('#summerSandal').removeClass('on');
-	$('#muleShoe').removeClass('on');
+	$(this).addClass('on');	
+	$(this).siblings().removeClass('on');
+	
 	
 	$('#nikeTodosDiv').show();
 	$('#slideSandalDiv').hide();
@@ -84,10 +79,7 @@ $('#todos').click(function(){
 //흰색 운동화 클릭
 $('#whiteShoe').click(function(){
 	$(this).addClass('on');
-	$('#sandal').removeClass('on');
-	$('#todos').removeClass('on');
-	$('#summerSandal').removeClass('on');
-	$('#muleShoe').removeClass('on');
+	$(this).siblings().removeClass('on');
 	
 	$('#whiteDiv').show();
 	$('#slideSandalDiv').hide();
@@ -99,10 +91,7 @@ $('#whiteShoe').click(function(){
 //여름샌들 클릭
 $('#summerSandal').click(function(){
 	$(this).addClass('on');
-	$('#sandal').removeClass('on');
-	$('#todos').removeClass('on');
-	$('#whiteShoe').removeClass('on');
-	$('#muleShoe').removeClass('on');
+	$(this).siblings().removeClass('on');
 	
 	$('#summerDiv').show();
 	$('#slideSandalDiv').hide();
@@ -114,10 +103,7 @@ $('#summerSandal').click(function(){
 //뮬운동화 클릭
 $('#muleShoe').click(function(){
 	$(this).addClass('on');
-	$('#sandal').removeClass('on');
-	$('#todos').removeClass('on');
-	$('#whiteShoe').removeClass('on');
-	$('#summerSandal').removeClass('on');
+	$(this).siblings().removeClass('on');
 	
 	$('#muleDiv').show();
 	$('#slideSandalDiv').hide();

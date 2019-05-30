@@ -10,6 +10,7 @@
 		</ul>
 		
 		<ul id="main_top_rightUl">
+			<c:if test="${memId eq 'admin' }"> <li><a href="../admin/index "><strong>관리자 페이지로 이동&emsp;</strong></a></li> </c:if>
 			<c:if test="${memId ne null }"> <li><a href="../user/logout">로그아웃</a></li> </c:if>
 			<c:if test="${memId eq null }"> <li><a href="../user/loginPage">🚪로그인</a></li></c:if>
 			<c:if test="${memId eq null }"> <li><a href="/abcd_mart/user/signUpStep_01">✍회원가입</a></li></c:if>

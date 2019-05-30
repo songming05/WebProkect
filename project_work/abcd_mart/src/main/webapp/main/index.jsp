@@ -8,17 +8,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="ABCD-Mart" />
-<meta name="naver-site-verification" content="f245ffaf55cafcfe6bcfb852616e7dd91bb4003c"/>
 <title>인덱스입니다</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" />
+
 
 <link rel="stylesheet" href="../css/main.css"/>
 <link rel="stylesheet" href="../css/header.css"/>
 <!-- advertisement -->
 <link rel="stylesheet" href="../css/advertise.css">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"><!-- 중간광고용 추가 -->
-
 <!-- best/new 상품 -->
 <link rel="stylesheet" href="../css/bestaward.css"/>
+<link rel="stylesheet" href="../css/theme_mdsPick.css"/>
 <link rel="stylesheet" href="../css/slick.css"/>
 <link rel="stylesheet" href="../css/slick-theme.css" />
 <link rel="stylesheet" href="../css/mainFooter.css"/>
@@ -47,16 +48,17 @@
 
 
 
-
+<footer>
 <jsp:include page="../template/noticeMovie.jsp"/>
 <jsp:include page="../template/mainFooter.jsp"/>
-
+</footer>
 
 
 
 
 </body>
 <!-- advertisement -->
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js' /></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>

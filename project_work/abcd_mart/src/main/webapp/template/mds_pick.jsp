@@ -8,18 +8,12 @@
         
         <div class="mds-pick-slide-hidden-box js-mdspick-slick">
             <div class="mds-pick-slide-tab-wrap">
-                <ul class="mds-pick-custom-dot">
-                    
-                        <li class="on" id="sandal"><a style="cursor: pointer;"><span>#슬라이드샌들</span></a></li>
-                    
-                        <li id="todos"><a style="cursor: pointer;"><span>#나이키토도스</span></a></li>
-                    
-                        <li id="whiteShoe"><a style="cursor: pointer;""><span>#흰색 운동화</span></a></li>
-                    
-                        <li id="summerSandal"><a style="cursor: pointer;"><span>#여름샌들 </span></a></li>
-                    
-                        <li id="muleShoe"><a style="cursor: pointer;"><span>#뮬운동화</span></a></li>
-                    
+                <ul class="mds-pick-custom-dot">                    
+	                <li class="on" id="slideSandal"><a style="cursor: pointer;"><span>#슬라이드샌들</span></a></li>
+	                <li id="todos"><a style="cursor: pointer;"><span>#나이키토도스</span></a></li>
+                    <li id="whiteShoe"><a style="cursor: pointer;""><span>#흰색 운동화</span></a></li>
+                    <li id="summerSandal"><a style="cursor: pointer;"><span>#여름샌들 </span></a></li>
+                    <li id="muleShoe"><a style="cursor: pointer;"><span>#뮬운동화</span></a></li>                    
                 </ul>
             </div>
             
