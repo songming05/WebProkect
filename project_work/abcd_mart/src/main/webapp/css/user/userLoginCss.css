@@ -11,7 +11,7 @@ a{text-decoration:none}
 .wrap .container_layout { width: 1100px; margin: auto; }
 .container_layout { width: 1100px; margin: auto; }
 
-li{ list-style: none; display:inline; }
+li{ list-style: none; display: inline;}
 .order_step { width: 820px; margin: 0 auto; padding:0px 0px; *zoom: 1; background: url("//image.abcmart.co.kr/nexti/images/abcmart_new/bg_line6_db.gif") repeat-x 0 29px; }
 .order_step:before, .order_step:after { display: table; overflow: hidden; content: ""; }
 .order_step:after { clear: both; }

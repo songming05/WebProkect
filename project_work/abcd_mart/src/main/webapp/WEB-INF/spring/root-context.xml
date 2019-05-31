@@ -11,8 +11,8 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->	
 	<context:component-scan base-package="spring.config"/>
-	<context:component-scan base-package="goods.bean"/>
-	<context:component-scan base-package="goods.dao"/>
+	<context:component-scan base-package="detailPage.bean"/>
+	<context:component-scan base-package="detailPage.dao"/>
 	<context:component-scan base-package="user.bean"/>
 	<context:component-scan base-package="user.dao"/>
 	

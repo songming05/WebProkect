@@ -3,7 +3,8 @@
 * { margin: 0px; padding: 0px; }
 body { min-width: 1100px; height: 100%; }
 div { display: block; }
-
+table{border-spacing: 0;
+    border-collapse: collapse;}
 /* HEADER ALL */
 #main_all { position: relative; }
 
@@ -45,34 +46,34 @@ div { display: block; }
 
 #line2 { width:100%; border:1px solid lightgray; margin: 0px; padding: 0px; }
 
-#categoryTable li { list-style-type: none; width: 100px; text-align: center; margin-bottom: 8px; font-size: 10pt;}
+#categoryTable li { list-style-type: none; display:block; width: 100px; text-align: center; margin-bottom: 8px; font-size: 10pt;}
 #categoryTable { border:1px solid orangered; position: absolute; z-index: 1; background-color: white; }
 #categoryTable td { vertical-align: top; }
 #categoryTable #shoesKinds { font-weight: bold; margin: 10px 0px 13px 0px; font-size: 10pt; }
 #categoryTable #categoryAd { width: 270px; }
 #categoryTable #categoryAdLi { width: 100px; text-align: center; margin: 10px 0px 10px 0px; }
 
-#sportsShoesTable li { list-style-type: none; width: 100px; text-align: center; margin-bottom: 8px; font-size: 7pt; }
+#sportsShoesTable li { list-style-type: none; display:block; width: 100px; text-align: center; margin-bottom: 8px; font-size: 7pt; }
 #sportsShoesTable { border:1px solid orangered; position: absolute; z-index: 1; background-color: white; }
 #sportsShoesTable td { vertical-align: top; }
 #sportsShoesTable #shoesKinds { font-weight: bold; font-size: 10pt; }
 
-#shoesTable li { list-style-type: none; width: 100px; text-align: center; margin-bottom: 8px; font-size: 7pt; }
+#shoesTable li { list-style-type: none; display:block; width: 100px; text-align: center; margin-bottom: 8px; font-size: 7pt; }
 #shoesTable { border:1px solid orangered; position: absolute; z-index: 1; background-color: white; }
 #shoesTable td { vertical-align: top; }
 #shoesTable #shoesKinds { font-weight: bold; font-size: 10pt; }
 
-#sandalTable li { list-style-type: none; width: 100px; text-align: center; margin-bottom: 8px; font-size: 7pt; }
+#sandalTable li { list-style-type: none; display:block; width: 100px; text-align: center; margin-bottom: 8px; font-size: 7pt; }
 #sandalTable { border:1px solid orangered; position: absolute; z-index: 1; background-color: white; }
 #sandalTable td { vertical-align: top; }
 #sandalTable #shoesKinds { font-weight: bold; font-size: 10pt; }
 
-#bootsTable li { list-style-type: none; width: 100px; text-align: center; margin-bottom: 8px; font-size: 7pt; }
+#bootsTable li { list-style-type: none; display:block; width: 100px; text-align: center; margin-bottom: 8px; font-size: 7pt; }
 #bootsTable { border:1px solid orangered; position: absolute; z-index: 1; background-color: white; }
 #bootsTable td { vertical-align: top; }
 #bootsTable #shoesKinds { font-weight: bold; font-size: 10pt; }
 
-#themeShopTable li { list-style-type: none; width: 60px; text-align: center; font-size: 7pt;font-weight: bold; margin-bottom: 5px; }
+#themeShopTable li { list-style-type: none; display:block; width: 60px; text-align: center; font-size: 7pt;font-weight: bold; margin-bottom: 5px; }
 #themeShopTable { border:1px solid orangered; position: absolute; z-index: 1; background-color: white; }
 #themeShopTable td { vertical-align: center; }
 #themeShopTable ul { margin: 15px 0px; }
@@ -82,13 +83,14 @@ div { display: block; }
 #brand_section1 { width: 1050px; }
 #brandTable1 { padding: 10px; }
 #brandTable1_name { width: 100px; font-size: 10pt; font-weight: bold; padding: 10px; }
-#brandTable1_name li { list-style-type: none; }
+#brandTable1_name li { list-style-type: none; display: inline; }
 #brandTable1_logo { width: 940px; }
 #brandTable1_logo li { list-style-type: none; display: inline; padding: 3px; }
 
 #brandTable_line { width:100%; border:0.5px dotted lightgray; margin: 0px; padding: 0px; }
 
 #brandTable2 { float: left; padding: 10px; }
+#brandTable2 li{display: block;}
 #brandTable2_name { width: 100px; font-size: 10pt; font-weight: bold; padding: 10px; }
 #brandTable2_name li { width: 90px; list-style-type: none; }
 #brandTable2_button1, #brandTable2_button2 li { list-style-type: none; }
@@ -100,6 +102,8 @@ div { display: block; }
 #brandTable2_button2 button { width: 50pt; height: 15pt; background-color: white; border:0.5px solid #d2d2d2; color: #d2d2d2; font-size: 10pt; }
 
 #brandTable3 { float: left; padding: 10px; }
+#brandTable3 ul{display: inline-block;}
+
 #brandTable3_name { width: 600px; font-size: 10pt; font-weight: bold; padding: 10px; }
 #brandTable3_name li { list-style-type: none; padding: 0px; spacing: 0px; }
 #brandTable3_korea { padding: 0px 10px 0px 10px; }
@@ -111,9 +115,9 @@ div { display: block; }
 
 #brandTable4 { float: left; padding: 10px; margin-left: 30px; }
 #brandTable4_name { width: 150px; font-size: 10pt; font-weight: bold; }
-#brandTable4_name li { list-style-type: none; padding: 10px 0px 10px 0px; spacing: 0px; }
+#brandTable4_name li { list-style-type: none; display: inline-block; padding: 10px 0px 10px 0px; spacing: 0px; }
 #brandTable4_searchBox { padding: 10px 0px 10px 0px; }
-#brandTable4_searchBox li { list-style-type: none; display: inline; }
+#brandTable4_searchBox li { list-style-type: none; display: inline-block; }
 #brandTable4_text { width: 100px; height: 30px; }
 #brandTable4_button { width: 34px; height: 34px; background-color: red; color: white; border: 1px solid red; position: relative; top: 2px; }
 
@@ -128,19 +132,21 @@ div { display: block; }
 #brandTable5_brand_ul p { width: 108px; font-size: 8pt; font-weight: bold; padding: 0px; spacing: 0px; display:inline; }
 
 #smartSearch_div { width: 1080px; height: 570px; margin: 0 auto; padding: 10px; z-index: 1; background-color: white; }
+#smartSearch_div section {display: inline-block;}
 #smartSearch_title { text-align: center; font-size: 20pt; font-weight: bold; padding: 10px 0px; margin: 10px 0px; }
 #smartSearch_line { width:100%; border:0.7px solid black; margin: 0px; padding: 0px; }
 
-#smartSearch_brand_section { width: 500px; height: 250px; float: left; padding: 20px; margin-right: 30px; }
+#smartSearch_brand_section { width: 500px; display:inline; height: 250px; float: left; padding: 20px; margin-right: 30px; }
 #smartSearchTable1_brandTitle { font-size: 10pt; font-weight: bold; padding: 10px 0px; margin: 0px; }
 #smartSearchTable1 { padding: 0px 0px 20px 0px; }
 #smartSearchTable1_brand_ul { width: 510px; height: 200px; overflow: auto; display: inline-block; border-top: 1px solid lightgray; border-bottom: 1px solid lightgray; }
 #smartSearchTable1_brand_ul li { width: 110px; display: inline; }
 #smartSearchTable1_brand_ul img { display:inline; padding: 5px; }
 
-#smartSearch_category_section_out { float: left; padding: 20px; height: 250px; }
+#smartSearch_category_section_out { float: left; display:inline; padding: 20px; height: 250px; }
+#smartSearch_category_section_out li{ display: block;}
 #smartSearch_category_section_out h4 { font-size: 10pt; font-weight: bold; padding: 10px 0px; margin: 0px; }
-#smartSearch_category_section_in { float: left; width: 480px; height: 200px; overflow: auto; border-top: 1px solid lightgray; border-bottom: 1px solid lightgray; }
+#smartSearch_category_section_in { float: left; width: 400px; height: 200px; overflow: auto; border-top: 1px solid lightgray; border-bottom: 1px solid lightgray; }
 #smartSearchTable2 { padding: 20px; }
 #smartSearchTable2_categoryTable_sportsShoes_img { width: 260px; font-size: 8pt; font-weight: bold; text-align: center; }
 #smartSearchTable2_categoryTable_sportsShoes_list { width: 190px; font-size: 8pt; text-align: left; vertical-align: center; }
@@ -158,7 +164,7 @@ div { display: block; }
 #smartSearchTable2_categoryTable_boots_list { width: 190px; font-size: 8pt; text-align: left; vertical-align: bottom; }
 #smartSearchTable2_categoryTable_boots_list li { list-style-type: none; }
 
-#smartSearch_themeNprice_section { float: left; width: 370px; height: 80px; padding: 10px 20px; }
+#smartSearch_themeNprice_section { float: left; width: 300px; height: 80px; padding: 10px 20px; }
 
 #smartSearch_theme_section { width: 300px; padding: 10px 0px; }
 #smartSearch_theme_section h4 { width: 40px; float: left; font-size: 10pt; font-weight: bold; }
@@ -169,7 +175,7 @@ div { display: block; }
 #smartSearch_price_section #startPrice { margin-top: 5px; width: 90px; vertical-align: top; }
 #smartSearch_price_section #endPrice { margin-top: 5px; width: 90px; vertical-align: top; }
 
-#smartSearch_size_section { width: 640px; height: 80px; padding: 10px 20px; font-size: 10pt; font-weight: bold; float: left; }
+#smartSearch_size_section { width: auto; height: 80px; padding: 10px 20px; font-size: 10pt; font-weight: bold; float: left; }
 #smartSearch_size_section h4 { width: 55px; font-size: 10pt; font-weight: bold; padding-top: 10px;  float: left; }
 #smartSearch_size_section table { padding: 10px; float: left; margin-top: 15px; }
 #smartSearch_size_section button { width: 33pt; height: 14pt; border:0.5px solid #c0c0c0; margin: 3px 3px; font-size: 8pt; background-color: white; vertical-align: top; }
@@ -190,7 +196,7 @@ div { display: block; }
 #smartSearch_color_section #color_white { margin-top: 7px; background-color: white; }
 #smartSearch_color_section #color_black { margin-top: 7px; background-color: black; }
 
-#smartSearch_select_section { margin-top: 10px; width: 715px; height:20px; padding: 15px 20px; float: left; }
+#smartSearch_select_section { margin-top: 10px; width: 600px; height:20px; padding: 15px 20px; float: left; }
 #smartSearch_select_section h4 { width: 90px; font-size: 10pt; font-weight: bold; float: left; }
 #smartSearch_select_div { margin-top: 5px; width: 517px; height:20px; float: left; }
 #smartSearch_select_button { margin-top: 5px; width: 45pt; height: 14pt; border: 1px solid #bfbfbf;  background-color: white; }

@@ -5,15 +5,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="ABCD-Mart" />
 
 <title>로그인 페이지</title>
 <link rel="stylesheet" href="../css/user/userLoginCss.css">
 <link rel="stylesheet" href="../css/main.css"/>
 <link rel="stylesheet" href="../css/header.css"/>
+<link rel="stylesheet" href="../css/mainFooter.css"/>
 
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" />
 <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js' /></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
 
 </head>
 <body>
@@ -21,7 +25,7 @@
 <jsp:include page="../template/header.jsp"/>
 
 </header>
-
+<br>
 
 <div class="container_wrap">
             
@@ -159,10 +163,13 @@
 </div>
 </div>
 </div>
-
+<footer>
+<jsp:include page="../template/mainFooter.jsp"/>
+</footer>
 </body>
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script type="text/javascript" src='../js/user/userLoginJs.js'/></script>
+
 <script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/mainFooter.js"></script>
 
 </html>

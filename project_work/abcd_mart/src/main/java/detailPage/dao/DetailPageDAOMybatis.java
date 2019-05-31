@@ -1,21 +1,22 @@
-package goods.dao;
+package detailPage.dao;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import goods.bean.GoodsDTO;
+import detailPage.bean.DetailPageDTO;
 
 @Repository
 @Transactional
-public class GoodsDAOMybatis implements GoodsDAO {
+public class DetailPageDAOMybatis implements DetailPageDAO {
 	@Autowired
 	private SqlSession sqlSession;
 	
 	@Override
-	public GoodsDTO getGoods(String prdtCode) {
-		
-		return sqlSession.selectOne("goodsSQL.getGoods",prdtCode);
+	public DetailPageDTO getProduct(String prdtCode) {
+		return sqlSession.selectOne("detailPageSQL.getProduct",prdtCode);
 	}
+	
+	
 }

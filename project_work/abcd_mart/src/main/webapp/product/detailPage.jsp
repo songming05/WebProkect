@@ -1,24 +1,41 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>제품상세페이지</title>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
-<script src="../js/detailPageJs.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>${detailPageDTO.getPrdtMainName()} 상세페이지</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="../css/detailPage.css">
+<link rel="stylesheet" href="../css/detailPage/page/detailPageCss.css">
+<link rel="stylesheet" href="../css/detailPage/zoom/zoomExam.css">
+ <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <style>
+	body {min-height: 100vh;} 
+  .container { margin: 150px auto; max-width: 960px; }
+</style>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="../js/detailPage/page/detailPageJs2.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
 
 </head>
 <body>
-
-<input type="hidden" value="${goodsDTO.getGoodsImage1()}" id="goodsImage1">
-<input type="hidden" value="${goodsDTO.getGoodsImage2()}" id="goodsImage2">
-<input type="hidden" value="${goodsDTO.getGoodsImage3()}" id="goodsImage3">
-<input type="hidden" value="${goodsDTO.getGoodsImage4()}" id="goodsImage4">
-<input type="hidden" value="${goodsDTO.getGoodsImage5()}" id="goodsImage5">
+<!-- 값 넘기기 -->
+<input type="hidden" value="${detailPageDTO.getPrdtMainName()}" id="mainName">
+<input type="hidden" value="${detailPageDTO.getPrdtImage1()}" id="image1">
+<input type="hidden" value="${detailPageDTO.getPrdtImage2()}" id="image2">
+<input type="hidden" value="${detailPageDTO.getPrdtImage3()}" id="image3">
+<input type="hidden" value="${detailPageDTO.getPrdtImage4()}" id="image4">
+<input type="hidden" value="${detailPageDTO.getPrdtSize()}" id="size">
+<input type="hidden" value="${detailPageDTO.getPrdtPrice()}" id="price">
+<input type="hidden" value="${detailPageDTO.getPrdtCode()}" id="code">
 
 <div class="container" style="width:1100px;">
 <br><br>
@@ -32,27 +49,34 @@
 
 <!-- 상품 이미지 -->
 <tr>
-<td style="width:450px; height:600px; padding:10px 28px;">
+<td style="width:450px; height:600px; padding:10px 28px; text-align:top; vertical-align: text-bottom">
 <!-- <div id="mainImage" style="border:1px solid red; width:450px; height:450px;"> -->
-<img src="../image/page/goods/${goodsDTO.getGoodsImage1()}" width="450px" height="450px" id="mainImage">
-<!-- </div> -->
-<br><br>
-<div style="width:470px; height:100px; padding:10px 30px;">
-<img src="../image/page/goods/${goodsDTO.getGoodsImage1()}" width="70px" height="70px" id="subImage1">&nbsp;&nbsp;
-<img src="../image/page/goods/${goodsDTO.getGoodsImage2()}" width="70px" height="70px" id="subImage2">&nbsp;&nbsp;
-<img src="../image/page/goods/${goodsDTO.getGoodsImage3()}" width="70px" height="70px" id="subImage3">&nbsp;&nbsp;
-<img src="../image/page/goods/${goodsDTO.getGoodsImage4()}" width="70px" height="70px" id="subImage4">&nbsp;&nbsp;
-<img src="../image/page/goods/${goodsDTO.getGoodsImage5()}" width="70px" height="70px" id="subImage5">
+
+<div class="container">
+  <div class="show">
+    <img src="../image/page/product/${detailPageDTO.getPrdtImage2()}" id="show-img">
+  </div>
+  <div class="small-img">
+    <div class="small-container">
+        <img src="../image/page/product/${detailPageDTO.getPrdtImage1()}" class="show-small-img" alt="">
+        <img src="../image/page/product/${detailPageDTO.getPrdtImage2()}" class="show-small-img" alt="">
+        <img src="../image/page/product/${detailPageDTO.getPrdtImage3()}" class="show-small-img" alt="">
+        <img src="../image/page/product/${detailPageDTO.getPrdtImage4()}" class="show-small-img" alt="">
+    </div>
+  </div>
 </div>
+<script src="../js/detailPage/zoom/zoomExam.js"></script>
+<script src="../js/detailPage/zoom/zoomMain.js"></script>
+
 </td>
 
 <td>
-  <h2 style="float:left; font-weight:bold;">${goodsDTO.getGoodsMainName()}</h2><br><br><br>
-  <h6 align="left" style="color:#AAAAAA;">${goodsDTO.getGoodsMiniName()}</h6><br>            
-  <table class="table" style="width:550px;">
+  <h2 style="float:left; font-weight:bold;">${detailPageDTO.getPrdtMainName()}</h2><br><br><br>
+  <h6 align="left" style="color:#AAAAAA;">${detailPageDTO.getPrdtMiniName()}</h6><br>            
+  <table class="table" style="width:550px;" id="detailPage">
     <thead>
       <tr>
-        <td colspan="2" align="left" style="font-size:11px;">스타일코드 : ${goodsDTO.getStyleCode()} &emsp; 상품코드 : ${goodsDTO.getPrdtCode()}</td>
+        <td colspan="2" align="left" style="font-size:11px;">스타일코드 : ${detailPageDTO.getPrdtStyleCode()} &emsp; 상품코드 : ${detailPageDTO.getPrdtCode()}</td>
       </tr>
     </thead>
     <tbody>
@@ -60,7 +84,8 @@
       <tr>
         <td width="90px" height="80px" style="font:bold 20px; color:#686868;">판매가</td>
         <td align="left">
-        <font size="5">${goodsDTO.getPrice()}</font>원
+        <font size="5">
+        <fmt:formatNumber type="number" value="${detailPageDTO.getPrdtPrice()}" pattern="#,###"/></font>원
         <div align="right">
         <button type="button" class="btn btn-outline-secondary btn-sm" id="smartCal" style="padding:1px 1px; margin:right;">스마트 계산기</button>
         </div>
@@ -69,13 +94,18 @@
       
       <tr>
         <td width="90px" height="80px" style="font:bold 20px; color:#686868;">배송비</td>
-        <td align="left">${goodsDTO.getDeliveryPrice()}</td>
+        <td align="left">${detailPageDTO.getPrdtDeliveryPrice()}</td>
       </tr>
       
       <tr>
         <td width="90px" height="80px" style="font:bold 20px; color:#686868;">사이즈</td>
         <td align="left">
-          <button type="button" class="btn btn-light" id="sizeMin">${goodsDTO.getSizeMin()}</button>
+        
+        <table id="table">
+        <tr><td id="btn" width="600px" align="center">
+        </td></tr>
+        </table>
+        
         </td>
       </tr>
       
@@ -94,13 +124,15 @@
         </td>
       </tr>
       
+      
     </tbody>
   </table>
-	  <div style="border:1px solid red; text-align:center;">
-	  <h4 style="float:right; font-weight:bold;">총 결제금액 0원</h4><br><br>
-	  <table class="table" style="width:400px;" id="selectTable">
+	  <div style="text-align:center;">
 	  
-	  </table>
+	  <table class="table" style="width:500px;" id="selectTable" align="center"></table>
+	  <h5 style="float:right; font-weight:bold;">총 결제금액 <span style="font-weight:bold; font-size:25pt; color:red;" id="prdtPrice">0</span>원</h5><br><br>
+	  
+	  
 	  <button type="button" class="btn btn-outline-danger"><h5>찜하기</h5></button>&emsp;
 	  <button type="button" class="btn btn-outline-danger"><h5>장바구니</h5></button>&emsp;
 	  <button type="button" class="btn btn-danger"><h5>바로구매</h5></button>
@@ -117,36 +149,41 @@
 <br><br>
 	<ul class="nav nav-tabs nav-justified" id="position1">
 	    <li class="nav-item">
-	      <a class="nav-link active" href="#position1" style="color:black;" id="tab1">상품정보</a>
+	      <a class="nav-link active" href="#position1" style="color:black;">상품정보</a>
 	    </li>
 	    <li class="nav-item">
-	      <a class="nav-link" href="#position2" style="color:#AAAAAA;" id="tab2">상품후기(0)</a>
+	      <a class="nav-link" href="#position2" style="color:#AAAAAA;">상품후기(0)</a>
 	    </li>
 	    <li class="nav-item">
-	      <a class="nav-link" href="#position3" style="color:#AAAAAA;" id="tab3">상품 Q&A(0)</a>
+	      <a class="nav-link" href="#position3" style="color:#AAAAAA;">상품 Q&A(0)</a>
 	    </li>
 	    <li class="nav-item">
-	      <a class="nav-link" href="#position4" style="color:#AAAAAA;" id="tab4">배송 / 교환 / 교환 / AS안내</a>
+	      <a class="nav-link" href="#position4" style="color:#AAAAAA;">배송 / 교환 / 교환 / AS안내</a>
 	    </li>
 	  </ul>
-		<img src="../image/page/goods/${goodsDTO.getGoodsDetailImage1()}" width="1000px" height="800px">
-	    <img src="../image/page/goods/${goodsDTO.getGoodsDetailImage2()}" width="1000px" height="800px">
-	    <img src="../image/page/goods/${goodsDTO.getGoodsDetailImage3()}" width="1000px" height="800px">
+		<img src="../image/page/product/${detailPageDTO.getPrdtDetailImage1()}" width="1000px" height="800px">
+	    <img src="../image/page/product/${detailPageDTO.getPrdtDetailImage2()}" width="1000px" height="800px">
+	    <img src="../image/page/product/${detailPageDTO.getPrdtDetailImage3()}" width="1000px" height="800px">
 		
 		<table class="table table-striped" id="guideTable">
 		    <tbody>
 		      <tr>
 		        <td>성별</td>
-		        <td>여성</td>
+		        <td>${detailPageDTO.getPrdtGender()}</td>
 		        <td>소재</td>
 		        <td>상세페이지 참조</td>
 		      </tr>
 		      
 		      <tr>
 		        <td>색상</td>
-		        <td>WHITE</td>
+		        <td>${detailPageDTO.getPrdtColor() }</td>
 		        <td>치수</td>
-		        <td>${goodsDTO.getSizeMin()}</td>
+		        <td>
+		        <c:forEach var="i" begin="0" step="5" end="30">
+		        ${detailPageDTO.getPrdtSize()+i}
+		        <c:if test="i ne 30">/</c:if>
+		        </c:forEach>
+		        </td>
 		      </tr>
 		      
 		      <tr>
@@ -190,16 +227,16 @@
 <br><br><br><br>
 	<ul class="nav nav-tabs nav-justified" id="position2">
 	    <li class="nav-item">
-	      <a class="nav-link" href="#position1" style="color:#AAAAAA;" id="tab5">상품정보</a>
+	      <a class="nav-link" href="#position1" style="color:#AAAAAA;">상품정보</a>
 	    </li>
 	    <li class="nav-item">
-	      <a class="nav-link active" href="#position2" style="color:black;" id="tab6">상품후기(0)</a>
+	      <a class="nav-link active" href="#position2" style="color:black;">상품후기(0)</a>
 	    </li>
 	    <li class="nav-item">
-	      <a class="nav-link" href="#position3" style="color:#AAAAAA;" id="tab7">상품 Q&A(0)</a>
+	      <a class="nav-link" href="#position3" style="color:#AAAAAA;">상품 Q&A(0)</a>
 	    </li>
 	    <li class="nav-item">
-	      <a class="nav-link" href="#position4" style="color:#AAAAAA;" id="tab8">배송 / 교환 / 교환 / AS안내</a>
+	      <a class="nav-link" href="#position4" style="color:#AAAAAA;">배송 / 교환 / 교환 / AS안내</a>
 	    </li>
 	  </ul>
 	  <br>
@@ -217,15 +254,15 @@
 		<nav class="navbar navbar-expand-sm bg-light navbar-light">
 		  <ul class="navbar-nav">
 		    <li class="nav-item active">
-		      <a class="nav-link" href="#" style="font-size:11px;">전체</a>
+		      <a class="nav-link" href="javascript:void(0)" style="font-size:11px;">전체</a>
 		    </li>
 		    <li class="nav-item">
-		      <a class="nav-link" href="#" style="font-size:11px;">일반</a>
+		      <a class="nav-link" href="javascript:void(0)" style="font-size:11px;">일반</a>
 		    </li>
 		  </ul>
 		</nav>
 		
-		<table class="table table-striped" style="font-size:11px; text-align:center;">
+		<table id="afterTable" class="table table-striped" style="font-size:11px; text-align:center;">
 		    <thead>
 		      <tr>
 		        <th width="300px">제목</th>
@@ -314,12 +351,12 @@
 	        <td>
 	        	<img src="../image/page/basic/이모티콘1.PNG" width="30px" height="30px"><strong style="font-size:13px;">배송안내</strong>	
 	        	<h6 style="font-size:13px;">배송비</h6>
-	        	<ul>
+	        	<ul style="padding:0 20px;">
 					<li>2만원 미만 구매 시 2500원</li>
 					<li>2만원 이상 구매 시 전액무료 (제주도 및 기타 도선료 추가지역 포함)</li>
 				</ul>
 				<h6 style="font-size:13px;">평균 배송일</h6>
-				<ul>
+				<ul style="padding:0 20px;">
 					<li>평일 4시 이전 주문 당일 출고됩니다. (온라인 발송에 한함)</li>
 					<li>결제 완료 후 평균 2일 소요됩니다. (주말 및 공휴일 제외)</li>
 					<li>택배사의 사정에 따라 다소 지연될 수 있습니다. (KG통운 1588-0001)</li>
@@ -330,7 +367,7 @@
 	        <td>
 	        	<img src="../image/page/basic/이모티콘2.PNG" width="30px" height="30px"><strong style="font-size:15px;">온.오프라인 교환 / 반품(환불) / AS 통합서비스</strong>
 	        	<h6 style="font-size:13px;">ABCD-MART는 온라인ㆍ오프라인 매장 구분 없이 교환/반품/AS 접수가 가능합니다.</h6>
-	        	<ul>
+	        	<ul style="padding:0 20px;">
 					<li>교환은 사이즈 교환만 가능합니다.</li>
 					<li>매장에 방문하여 접수하시면 택배비 무료입니다.(단품 기준 10개 미만에 한함)</li>
 					<li>매장에 방문하여 접수하실 경우 구매내역서를 지참하여 주시기 바랍니다.</li>
@@ -356,14 +393,14 @@
   			(배송 지연 제외)<br><br>
   			
   			<h6 style="font-size:13px;">교환/반품(환불)이 불가능한 경우</h6>
-  			<ul>
+  			<ul style="padding:0 20px;">
 				<li>신발/의류를 외부에서 착용한 경우</li>
 				<li>상품이 훼손된 경우</li>
 				<li>제품에 붙어있는 택(Tag)을 분실/훼손한 경우</li>
 				<li>브랜드 박스 분실/훼손된 경우</li>
 			</ul>
   			<h6 style="font-size:13px;">교환/반품(환불) 시 박스 포장 예</h6>
-  			<ul>
+  			<ul style="padding:0 20px;">
 				<li>브랜드 박스의 훼손이 없도록 택배 박스 및 타 박스로 포장하여 발송해주시기 바랍니다.</li>
 			</ul>
 			
@@ -401,7 +438,7 @@
 	        
 	        <br><br><br>
 	        <strong style="font-size:13px;">교환/반품(환불) 배송비 안내</strong>
-	        <ul>
+	        <ul style="padding:0 20px;">
 				<li>왕복 택배비 : 최초 배송비 (2500원) + 반품 배송비(2500원) = 총 5,000원 이 부과됩니다. <br>
 						(선결제 또는 환불금액에서 차감 선택)</li>
 				<li>단, 보내주신 상품이 불량 또는 오배송으로 확인 될 경우 택배비를 환불해드립니다. <br>
@@ -437,7 +474,7 @@
 		      		<tr>
 		      			<td>
 		      			<h6 style="font-size:13px;">수선 AS</h6>
-			     		<ul>
+			     		<ul style="padding:0 20px;">
 							<li>수선을 원하는 내용을 자세하게(사진 첨부 가능) 기재해주면 처리 시 도움이 될 수 있습니다.</li>
 							<li>수선 접수 시 왕복 택배비(5000원)가 부과됩니다.</li>
 							<li>지정택배(KG통운) 외 타택배 이용 시 추가로 발생되는 금액은 고객님께서 부담해주셔야 합니다.</li>
@@ -474,7 +511,7 @@
 		      			
 		      			<td>
 		      			<h6 style="font-size:13px;">심의 AS</h6>
-			     		<ul>
+			     		<ul style="padding:0 20px;">
 							<li>불량으로 확인되는 내용을 자세하게(사진 첨부 가능) 기재해주시면 처리 시 도움이 될 수 있습니다.</li>
 							<li>상품 불량으로 인한 심의 접수 시 왕복 택배비는 ABCD-MART에서 부담합니다. <br>
 									(KG통운 택배 이용 권장)</li>
