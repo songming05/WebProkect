@@ -74,7 +74,7 @@ public class UserController {
 			loginResult="loginOk";
 			session.setAttribute("memId", userDTO.getId());
 			session.setAttribute("memName", userDTO.getName());
-			System.out.println(userDTO.getName());
+			//System.out.println(userDTO.getName());
 		} else {
 			loginResult="loginFail";
 		}

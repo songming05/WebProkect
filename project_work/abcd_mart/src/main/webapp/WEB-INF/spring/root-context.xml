@@ -15,6 +15,8 @@
 	<context:component-scan base-package="detailPage.dao"/>
 	<context:component-scan base-package="user.bean"/>
 	<context:component-scan base-package="user.dao"/>
+	<context:component-scan base-package="cart.bean"/>
+	<context:component-scan base-package="cart.dao"/>
 	
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 	
