@@ -49,6 +49,23 @@ public class UserController {
 		return result;
 	}
 	
+	@RequestMapping(value = "/checkUserEmail", method = RequestMethod.POST)
+	@ResponseBody
+	public String checkUserEmail(@RequestParam String email) {
+		UserDTO userDTO = userDAO.checkUserEmail(email);
+		String result="";
+		if(userDTO==null) {
+			result="not_exist";
+		} else {
+			result="exist";
+		}
+		
+		return result;
+	}
+	
+	
+	
+	
 	@RequestMapping(value = "/signUp", method = RequestMethod.POST)
 	@ResponseBody
 	public String signUp(@RequestParam Map<String,String> map) {

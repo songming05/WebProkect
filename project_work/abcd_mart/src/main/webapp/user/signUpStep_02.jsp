@@ -80,7 +80,7 @@
              
              <tr>
              	<td class="sub_type2"><label for="userPwd"><em class="fc_red">*</em> 비밀번호</label></td>
-             	<td class="sub_type2"><input type="password" class="table_text" name="userPwd" id="userPwd" value="" style="width:300px;" maxlength="20" placeholder="영문, 숫자, 특수문자의 2개 이상 조합 10~20자">
+             	<td class="sub_type2"><input type="password" class="table_text" name="userPwd" id="userPwd" value="" style="width:300px;" maxlength="20" placeholder="영문, 숫자, 특수문자의 3개 이상 조합 8~20자">
              	&nbsp;&nbsp;
              	<span class="sub_type2 fc_type_f3 check_password_blank"></span>
              	<span class="sub_type2 fc_type_f3 check_password_noti incorrect" style="display: none;">비밀번호가 일치하지 않습니다.</span>
@@ -130,6 +130,10 @@
              	<span class="sub_type2 fc_red ok" id="checkUserEmail" style="display: none;"> 사용 가능한 이메일주소 입니다.&nbsp;&nbsp;</span>
              	<span class="sub_type2 fc_red duplicated" id="checkUserEmail" style="display: none;"> 중복된 이메일주소 입니다.&nbsp;&nbsp;</span>
              	<span class="sub_type2 fc_red unavailable" id="checkUserEmail" style="display: none;"> 사용할 수 없는 이메일주소 입니다.&nbsp;&nbsp;</span>
+             	<input type="hidden" id="checkUserEmailResult">
+
+
+
              		
              	<div class="mt15">
                 <p class="fc_type_7b">                                                

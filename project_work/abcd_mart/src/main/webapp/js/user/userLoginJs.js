@@ -133,6 +133,8 @@ $('input[name=userId]').on('change', function() {
 
 
 //===================== 중복버튼 누르면 =====================
+
+//1. 아이디중복
 $('#btnCheckUserId').on('click', function() {
    var userId = $('input[name=userId]');   
    $('span.user_id_noti').css('display', 'none');
@@ -169,6 +171,59 @@ $('#btnCheckUserId').on('click', function() {
   
    
 });
+
+
+
+//2. 이메일중복
+$('#btnCheckEmail').click(function() {
+	var userEmail1 = $('input[name=userEmail1]');
+	var userEmail2 = $('input[name=userEmail2]');
+	var email = userEmail1.val()+'@'+userEmail2.val();
+	$('.sub_type2.fc_red').attr('style', 'display:none');
+		
+	if(userEmail1.val()==''){
+		swal("이메일을 입력해주세요");
+		userEmail1.focus();
+		return;
+	} if(userEmail2.val()==''){		
+		swal("이메일을 입력해주세요");
+		userEmail2.focus();
+		return;
+	}
+	
+	$.ajax({
+		type: 'POST',
+		url: '/abcd_mart/user/checkUserEmail',
+		data: {'email':email},
+		dataType: 'text',
+		success: function(data) {
+			if(data=='exist'){
+				$('.sub_type2.fc_red.duplicated').attr('style', 'display:inline');
+			} else {
+				$('.sub_type2.fc_red.ok').attr('style', 'display:inline');
+				$('#checkUserEmailResult').val(userEmail1.val()+'@'+userEmail2.val());				
+			}
+		}
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+});
+
+
 
 
 
@@ -389,6 +444,11 @@ function joinUser() {
 		swal('아이디를 중복체크 해주세요');
 		return false;
 	}
+	if($('#checkUserEmailResult').val()!=userEmail1.val()+'@'+userEmail2.val()) {
+		swal('이메일 중복체크 해주세요');
+		return false;
+	}
+	
 	$.ajax({
 		type: 'POST',
 		url: '/abcd_mart/user/signUp',
@@ -416,7 +476,7 @@ function joinUser() {
 
 function pwd_check(userPwd) {
  
-  if( (userPwd.length<8) || (!userPwd.match(/([a-zA-Z0-9].*[!,@,#,$,%,^,&,*,?,_,~,-])|([!,@,#,$,%,^,&,*,?,_,~,-].*[a-zA-Z0-9])/)))  {
+  if( (userPwd.length<8) ||(userPwd.length>20)|| (!userPwd.match(/([a-zA-Z0-9].*[!,@,#,$,%,^,&,*,?,_,~,-])|([!,@,#,$,%,^,&,*,?,_,~,-].*[a-zA-Z0-9])/)))  {
     swal("비밀번호는 영문(대소문자구분),숫자,특수문자(~!@#$%^&*()-_? 만 허용)를 혼용하여 8자 이상을 입력해주세요.");
     return false;
   }

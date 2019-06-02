@@ -7,6 +7,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="checkUserId" parameterType="String" resultType="user">
 		select * from userinfo where id=#{id}
 	</select>
+	<select id="checkUserEmail" parameterType="String" resultType="user">
+		select * from userinfo where email=#{email}
+	</select>
 
 	<insert id="signUp" parameterType="map">
 		insert 
