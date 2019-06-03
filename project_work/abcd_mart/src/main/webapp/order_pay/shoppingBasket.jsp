@@ -14,7 +14,6 @@
 <link rel="stylesheet" href="../css/mainFooter.css"/>
 
 
-
 <link rel="stylesheet" href="../css/order_pay/shoppingBasket.css" >
 </head>
 <body>
@@ -22,6 +21,7 @@
 	<header>
 		<jsp:include page="../template/header.jsp"/>
 	</header>
+	
 	<h2 class="shoppingBasket_title">장바구니</h2>
 	<form>
 		<section class="shoppingBasket_section">

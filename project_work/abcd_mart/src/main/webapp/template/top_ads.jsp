@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <!-- 잘되는거 백업 -->
-<!-- <aside>
+<%-- <aside>
 	<div id=carousel-a class="carousel slide carousel-sync" data-ride="carousel"  data-interval="2950" style="text-align: center;">
 		<ol class="carousel-indicators">
 			<li data-target="#carousel-a" data-slide-to="0" class="active"></li>
@@ -53,7 +53,7 @@
     box-sizing: border-box;
     width: 100%;  
     position: relative; 
-    margin: 0 auto;" data-ride="carousel" -->
+    margin: 0 auto;" data-ride="carousel" --%>
 
 <!-- 메인광고 -->
 

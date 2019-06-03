@@ -6,6 +6,15 @@ $(function(){
     }, 1000);
 });
 
+/*
+b.onClickNext=function(e){
+	e.preventDefault(),(!b.isEnd||b.params.loop)&&b.slideNext()
+},
+b.onClickPrev=function(e){
+	e.preventDefault(),(!b.isBeginning||b.params.loop)&&b.slidePrev()
+},
+*/
+
 function setElapseTimeSpecialPrice() {
     var time_diff = $("#timeDiff").val();
     

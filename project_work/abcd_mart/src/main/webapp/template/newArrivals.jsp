@@ -50,9 +50,9 @@
 			<strong class="bold">NEW</strong>
 			ARRIVALS
 		</h2>
-
+	
 		<div class="new-arrivals-slide-box">
-			<div class="swiper-container js-arrivals-sw swiper-container-horizontal">
+			<div class="swiper-container js-arrivals-sw swiper-container-horizontal" style="overflow: auto;">
 				<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);transition-duration: 0ms;">
 					<div class="swiper-slide">
 				       <ul class="slide-product-list-na">
@@ -97,10 +97,54 @@
                           </li>
 
 				       </ul>
+    					
+    					<ul class="slide-product-list-na">	                        
+	                        <li class="na-list-li">
+	                        	<div class="product-simple-box">
+		                            <a href="/abcd_mart/product/detail?prdtCode=0071333" class="prod-img">
+	                                	<img src="../image/newarrivals/rebok_0071333_list.jpg" onerror="imageError(this)">
+	                                </a>
+	                                <strong class="prod-maker">리복</strong>
+	                                <span class="prod-name">REEBOK ROYAL BRIDGE 3.0</span>
+	                                <div class="prod-sum">
+	                                	<span class="after-sum">79,000</span>                                   
+	                                </div>
+	                            </div>
+	                        </li>	                            
+	                        
+                            <li class="na-list-li">
+                                <div class="product-simple-box">
+                                    <a href="/abcd_mart/product/detail?prdtCode=0071358" class="prod-img">
+                                    	<img src="../image/newarrivals/fila_0071358_list.jpg" onerror="imageError(this)">
+                                    </a>
+                                    <strong class="prod-maker">휠라</strong>
+                                    <span class="prod-name">SPLINE SCRIPT</span>
+                                    <div class="prod-sum">
+                                        <span class="after-sum">49,000</span>
+                                    </div>
+                                </div>
+                            </li>
+	                            
+                            <li class="na-list-li">
+                                <div class="product-simple-box">
+                                    <a href="/abcd_mart/product/detail?prdtCode=0069582" class="prod-img">
+                                    	<img src="../image/newarrivals/danner_0069582_list.jpg" onerror="imageError(this)">
+                                    </a>
+                                    <strong class="prod-maker">대너</strong>
+                                    <span class="prod-name">RIVERBED SLIDE</span>
+                                    <div class="prod-sum">
+                                        <span class="after-sum">69,000</span>
+                                    </div>
+                                </div>
+                            </li>	                            
+					    </ul>
     				</div>
 				</div>
 			</div>
 		</div>
+		
+		
+		<%--
 		<div class="arrivals-slide-control">
 			<a href="#" class="cont-btn pre">
 			<span class="main-blind">이전</span>
@@ -109,6 +153,10 @@
 			<span class="main-blind">이전</span>
 			</a>
 		</div>
+		
+		--%>
+		
+		
 	</section>
 </div>
 </div>
