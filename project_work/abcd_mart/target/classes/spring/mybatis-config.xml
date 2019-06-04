@@ -7,6 +7,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<typeAlias type="java.util.Map" alias="map"/>
 		<typeAlias type="detailPage.bean.DetailPageDTO" alias="detailPage"/>
 		<typeAlias type="user.bean.UserDTO" alias="user"/>
-		<typeAlias type="cart.bean.CartDTO" alias="cartDTO"/>		
+		<typeAlias type="cart.bean.CartDTO" alias="cartDTO"/>
+		<typeAlias type="admin.bean.PaymentDTO" alias="payment"/>			
 	</typeAliases>
 </configuration>

@@ -5,18 +5,35 @@
 <head>
 <meta charset="UTF-8">
 <title>Step02</title>
+
+
+
 <link rel="stylesheet" href="../css/user/userLoginCss.css">
+<link rel="stylesheet" href="../css/main.css"/>
+<link rel="stylesheet" href="../css/header.css"/>
+<link rel="stylesheet" href="../css/mainFooter.css"/>
+
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" />
 <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js' /></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
 
 </head>
 <body>
+
+<header>
+<jsp:include page="../template/header.jsp"/>
+
+</header>
+
+
+	<div class="signUpStep_02_layout" style="margin-left:114px; margin-right:114px;">
 	<section class="sub_type2 page_location">
             <ul>
                 <li><a href="https://www.abcmart.co.kr/abc/main">홈</a></li>
                 <li class="location_box"><span>온라인 회원가입</span></li>
                 <li class="location_box"><span>회원정보입력</span></li>
             </ul>
+            <hr>
      </section>
 
 	<header> 
@@ -208,8 +225,18 @@
  </div>
  <div class="mb40 mt40 align-center"></div>
  
-    
+</div>
+
+
+<footer>
+<jsp:include page="../template/mainFooter.jsp"/>
+</footer>
+
+
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script type="text/javascript" src="../js/user/userLoginJs.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/mainFooter.js"></script>
+
 </html>

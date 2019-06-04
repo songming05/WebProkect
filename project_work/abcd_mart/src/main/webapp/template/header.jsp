@@ -18,7 +18,7 @@
 			<li>🚚주문배송</li>
 			<li>📄마이페이지</li>
 			<li>📞고객센터</li>
-			<li>🏠매장찾기</li>
+			<li><a href="../center/abcd_StoreList">🏠매장찾기</a></li>
 		</ul>
 	</div>
 	
