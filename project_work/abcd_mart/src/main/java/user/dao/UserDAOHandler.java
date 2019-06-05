@@ -1,5 +1,6 @@
 package user.dao;
 
+import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
@@ -39,6 +40,19 @@ public class UserDAOHandler implements UserDAO {
 	@Override
 	public UserDTO getUserInfo(Map<String, String> map) {
 		return sqlSession.selectOne("userSQL.getUserInfo", map);
+	}
+
+	@Override
+	public String getIdByEmail(Map<String, String> map) {
+		return sqlSession.selectOne("userSQL.getIdByEmail", map);
+	}
+	@Override
+	public String getJoinDate(String id) {
+		return sqlSession.selectOne("userSQL.getJoinDate", id);
+	}
+	@Override
+	public UserDTO getInfoByEmail(Map<String, String> map) {
+		return sqlSession.selectOne("userSQL.getInfoByEmail", map);
 	}
 
 	

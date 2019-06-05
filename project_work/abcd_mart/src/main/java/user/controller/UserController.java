@@ -1,5 +1,6 @@
 package user.controller;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpSession;
@@ -69,7 +70,7 @@ public class UserController {
 	@RequestMapping(value = "/signUp", method = RequestMethod.POST)
 	@ResponseBody
 	public String signUp(@RequestParam Map<String,String> map) {
-		//암호화 진행하면 된다
+		//�븫�샇�솕 吏꾪뻾�븯硫� �맂�떎
 		String EncodedPassword = passwordEncoder.encode(map.get("password"));
 		map.remove("password");
 		map.put("password", EncodedPassword);
@@ -105,8 +106,27 @@ public class UserController {
 		return "/main/index";
 	}
 
-	@RequestMapping(value="/idFound", method = RequestMethod.GET)
-	public String idFound() {
+	@RequestMapping(value ="/idFound", method = RequestMethod.GET)
+	public String idFind() {
 		return "/user/idFound";
 	}
+	
+	@RequestMapping(value ="/findMyId", method = RequestMethod.POST)
+	@ResponseBody
+	public String findMyId(@RequestParam Map<String,String> map) {
+		String way = map.get("way");
+		if(way.equals("email")) {
+			UserDTO userDTO = userDAO.getInfoByEmail(map);
+			String userId = userDAO.getIdByEmail(map);
+			String userJoinDate = userDAO.getJoinDate(userId);
+			System.out.println(userId);
+			System.out.println(userJoinDate);
+			System.out.println(userDTO.getId()+userDTO.getJoin_date());
+		} else if(way.equals("phone")) {
+			
+		}
+		
+		return "";		
+	}
+	
 }
